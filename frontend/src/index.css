@@ -1,0 +1,64 @@
+@import "tailwindcss";
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  padding-top: 10px;
+}
+@keyframes glow {
+0%, 100% {
+  text-shadow: 0 0 10px #fbbf24;}
+50% {
+  text-shadow: 0 0 25px #fbbf24, 0 0 40px #fbbf24;}
+
+}
+.name {
+  animation: glow 2s ease-in-out infinite;
+}
+a {
+  color: rgb(245, 239, 239);
+  text-decoration: none;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  flex-direction: column; /* يخلي العناصر تحت بعض */
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  display: flex; /* يجعل الأيقونة والنص في خط واحد */
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  gap: 80px;
+  width: 250px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background: rgba(255,255,255,0.1);
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
